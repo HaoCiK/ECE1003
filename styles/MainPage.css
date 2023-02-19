@@ -1,0 +1,70 @@
+#black
+{
+  background: black;
+}
+body
+{
+  background-color: black;
+  background: url('https://images.pexels.com/photos/2007401/pexels-photo-2007401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') center / cover;
+}
+
+table
+{
+  border-radius: 20px;
+}
+
+table#dataTable,tbody,td{
+  background-color: #34495E;
+  color: white;
+  font-family: "Franklin Gothic Medium";
+  font-weight: 400;
+}
+
+thead,th{
+  background-color: #16A085;
+  color: white;
+}
+
+
+tbody,td{
+  background-color: #34495E;
+  color: white;
+  font-family: "Franklin Gothic Medium";
+  font-weight: 400;
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 20px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 20px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+#button1
+{
+  font-size: 10px;
+  font-family: "Franklin Gothic Medium";
+  color: white;
+}
+
+#noSchedule
+{
+  margin: 32px auto;
+  text-align: left;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+}

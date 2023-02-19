@@ -1,0 +1,44 @@
+#black
+{
+  background: black;
+}
+body
+{
+  background-color: black;
+  color:white;
+}
+#mapArea{
+  height:600px;
+  width:750px;
+  color:black;
+  border: 20px solid grey;
+  float:left;
+
+}
+#input
+{
+  margin-left: 0px;
+  background-color:  grey;
+  color: :white;
+  border: 5px solid black;
+}
+#depatureairport
+{
+  color:black;
+}
+#airplane
+{
+  color:black;
+}
+#button
+{
+  color:white;
+}
+#button1
+{
+  color:white;
+}
+#buttonsearch
+{
+  color:white;
+}

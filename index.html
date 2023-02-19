@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/MainPage.css">
+	</head>
+
+	<body text="white" font-family: "Times New Roman">
+
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  	<header class="mdl-layout__header" id="black" >
+    <div class="mdl-layout__header-row" >
+      <div class="mdl-layout-title" >
+				<img src="docs/FlyAway Logo.png" width="50" height="50">
+				Main Page</div>
+    </div>
+    </header>
+    <div class="mdl-layout__drawer" id="black">
+      <nav class="mdl-navigation" >
+        <a class="mdl-navigation__link" href="index.html">Main page</a>
+        <a class="mdl-navigation__link" href="Schedulepage.html">Schedule Flights</a>
+        <a class="mdl-navigation__link" href="Fleetpage.html">View Fleet page</a>
+      </nav>
+    </div>
+
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col" >
+        <h1>Scheduled Flights</h1>
+				<!--buttons for sorting-->
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="sortByHistory()">
+  				History
+				</button>
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="sortByOngoing()">
+  				On-going
+				</button>
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="sortByFuture()">
+  				Scheduled
+				</button>
+				<!--route list-->
+				<div class="mdl-cell mdl-cell--12-col" id ="routes">
+					<!--example for testing-->
+
+
+				</div>
+      </div>
+    </div>
+
+		<script src="scripts/shared.js"></script>
+		<script src="scripts/Mainpage.js"></script>
+	</body>
+</html>

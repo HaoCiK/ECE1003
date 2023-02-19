@@ -1,0 +1,99 @@
+#black
+{
+  background: black;
+}
+body
+{
+  background-color: black;
+}
+
+#dataTable
+{
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+thead,th{
+  background-color: #16A085;
+  color: white;
+}
+
+table#dataTable,tbody,td{
+  background-color: #34495E;
+  color: white;
+  font-family: "Franklin Gothic Medium";
+  font-weight: 400;
+}
+
+table
+{
+  border-radius: 20px;
+}
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 20px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 20px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+.btn {
+  background-color: #16A085;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  cursor: pointer; /* Mouse pointer on hover */
+  width: 20% !important;
+  height: 50% !important;
+  float:right;
+  vertical-align:center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #16A085;
+}
+
+.btn2 {
+  background-color: #16A085;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  cursor: pointer; /* Mouse pointer on hover */
+  width: 20% !important;
+  height: 50% !important;
+  float:right;
+  vertical-align:center;
+}
+
+/* Darker background on mouse-over */
+.btn2:hover {
+  background-color: #16A085;
+}
+
+.btn3 {
+  background-color: #16A085;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  cursor: pointer; /* Mouse pointer on hover */
+  width: 20% !important;
+  height: 50% !important;
+  float:right;
+  vertical-align:center;
+}
+
+/* Darker background on mouse-over */
+.btn3:hover {
+  background-color: #16A085;
+}

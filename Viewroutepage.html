@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--MDL-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/Viewroutepage.css">
+  <title> View Route Page </title>
+
+	<!--Import Mapbox-->
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css' rel='stylesheet'>
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="black">
+
+  	<header class="mdl-layout__header" id="black">
+    <div class="mdl-layout__header-row" id="black">
+      <div class="mdl-layout-title" >
+        <img src="docs/FlyAway Logo.png" width="50" height="50">
+        View Route Page</div>
+
+      <span class="mdl-layout-title" id="black"></span>
+    </div>
+
+  </header>
+  <div class="mdl-layout__drawer" id="black">
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html">Main page</a>
+      <a class="mdl-navigation__link" href="Schedulepage.html">Schedule Flights</a>
+      <a class="mdl-navigation__link" href="Fleetpage.html">View Fleet page</a>
+    </nav>
+  </div>
+
+	<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--12-col">
+			<div id="map"></div>
+		</div>
+	</div>
+
+	<div class="mdl-grid">
+		 <div class="mdl-cell mdl-cell--4-col">
+
+			 <table id="routeTable" class="mdl-data-table mdl-js-data-table mdl-shadow--50dp">
+				 <h1> Route Details </h1>
+				 <thead>
+					 <tr>
+						 <th class="mdl-data-table__cell--non-numeric">Departure Airport</th>
+						 <th class="mdl-data-table__cell--non-numeric">Departure Country</th>
+						 <th class="mdl-data-table__cell--non-numeric">Departure Date</th>
+						 <th class="mdl-data-table__cell--non-numeric">Departure Time</th>
+						 <th class="mdl-data-table__cell--non-numeric">Arrival Airport</th>
+						 <th class="mdl-data-table__cell--non-numeric">Arrival Country</th>
+						 <th class="mdl-data-table__cell--non-numeric">Arrival Time</th>
+						 <th class="mdl-data-table__cell--non-numeric">Distance</th>
+						 <th class="mdl-data-table__cell--non-numeric">Duration</th>
+						 <th class="mdl-data-table__cell--non-numeric">Status</th>
+             <th></th>
+					 </tr>
+				 </thead>
+				 <tbody>
+
+		 <table id="departureWeatherTable" class="mdl-data-table mdl-js-data-table mdl-shadow--50dp" >
+			 <h1> Departure Weather </h1>
+			 <thead>
+				 <tr>
+					 <th class="mdl-data-table__cell--non-numeric">Weather</th>
+					 <th class="mdl-data-table__cell--non-numeric">Min Temperature</th>
+					 <th class="mdl-data-table__cell--non-numeric">Max Temperature</th>
+				 </tr>
+			 </thead>
+			 <tbody>
+
+	 <table id="arrivalWeatherTable" class="mdl-data-table mdl-js-data-table mdl-shadow--50dp">
+		 <h1> Arrival Weather </h1>
+		 <thead>
+			 <tr>
+				 <th class="mdl-data-table__cell--non-numeric">Weather</th>
+				 <th class="mdl-data-table__cell--non-numeric">Min Temperature</th>
+				 <th class="mdl-data-table__cell--non-numeric">Max Temperature</th>
+			 </tr>
+		 </thead>
+		 <tbody>
+
+ <table id="planeTable" class="mdl-data-table mdl-js-data-table mdl-shadow--50dp">
+	 <h1> Plane Details </h1>
+	 <thead>
+		 <tr>
+			 <th class="mdl-data-table__cell--non-numeric">ID</th>
+			 <th class="mdl-data-table__cell--non-numeric">Airline</th>
+			 <th class="mdl-data-table__cell--non-numeric">Type</th>
+		 </tr>
+	 </thead>
+	 <tbody>
+
+	 </div>
+	</div>
+</body>
+
+<script src="scripts/shared.js"></script>
+<script src="scripts/webServiceaccess.js"></script>
+<script src="scripts/Viewroutepage.js"></script>
+
+</html>

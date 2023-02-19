@@ -1,0 +1,101 @@
+#black
+{
+  background: black;
+}
+body
+{
+  background-color: black;
+}
+
+h1 {
+  margin: 32px auto;
+  text-align: left;
+  font-size: 32px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  color: White;
+}
+
+#map
+{
+  height:600px;
+  width:1200px;
+  border: 20px solid grey;
+  margin-left:auto;
+}
+
+#routeTable
+{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#departureWeatherTable
+{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#arrivalWeatherTable
+{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#planeTable
+{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.mdl-data-table thead,th{
+  background-color: #16A085;
+  color: white;
+  text-align: left;
+}
+
+table#routeTable,table#departureWeatherTable,table#arrivalWeatherTable,table#planeTable,tbody,td{
+  background-color: #34495E;
+  color: white;
+  font-family: "Franklin Gothic Medium";
+  font-weight: 400;
+}
+
+table
+{
+  border-radius: 20px;
+}
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 20px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 20px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+#deleteButton
+{
+  margin: 10px 0px 120px 950px;
+  padding: 0px 20px;
+  height: 50px;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium";
+  color: white;
+
+}

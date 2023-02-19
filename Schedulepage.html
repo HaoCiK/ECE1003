@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Schedule Page</title>
+  <!--Import MDL libraries-->
+  <link rel="stylesheet" href="styles/Schedulepage.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!--Import Mapbox-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="black">
+
+  	<header class="mdl-layout__header" id="black">
+    <div class="mdl-layout__header-row" id="black">
+      <div class="mdl-layout-title" >
+        <img src="docs/FlyAway Logo.png" width="50" height="50">
+        Schedule Page
+      </div>
+    </div>
+
+  </header>
+
+  <div class="mdl-layout__drawer" id="black">
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html">Main page</a>
+      <a class="mdl-navigation__link" href="Schedulepage.html">Schedule Flights</a>
+      <a class="mdl-navigation__link" href="Fleetpage.html">View Fleet Page</a>
+    </nav>
+  </div>
+  <!--Map display-->
+  <div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+    <div id ="input">
+    Depature Date:
+      <div class="mdl-textfield mdl-js-textfield" >
+        <input class="mdl-textfield__input" type="date" id="departureDate" >
+        <label class="mdl-textfield__label" for="depaturedate"></label>
+      </div>
+    </div>
+    <div id ="input">
+    Depature time:
+      <div class="mdl-textfield mdl-js-textfield" >
+        <input class="mdl-textfield__input" type="time" id="departureTime" >
+        <label class="mdl-textfield__label" for="depaturetime"></label>
+      </div>
+    </div>
+    <div id="input">
+       Depature Country:
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="country">
+        <label class="mdl-textfield__label" for="country"></label>
+      </div>
+    </div>
+    <div id="input">
+       Depature City:
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="city">
+        <label class="mdl-textfield__label" for="city"></label>
+      </div>
+    </div>
+    <br>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--lightgrey" id="buttonsearch" onclick="searchAirport()">
+Search Airport
+</button>
+
+    <div id="input">
+      <div id="departureAirportOutput">
+      </div>
+    </div>
+    <br>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--lightgrey" id="button1" onclick="getPlane()">
+Get Airplane
+</button>
+    <div id ="input">
+    <div id="availablePlaneOutput">
+    </div>
+    </div>
+    <br>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--lightgrey" id="button" onclick="showAirport()">
+         Plan Waypoint
+    </button>
+
+<br>
+<br>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--lightgrey" id="button" onclick="addSchedule()">
+     Add Schedule +
+</button>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="button3" onclick="location.reload()">
+Cancel Schedule
+</button>
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+    <div id="mapArea" class="page-block"></div>
+  </div>
+
+</div>
+</body>
+<script type="text/javascript" src="scripts/shared.js"></script>
+<script type="text/javascript" src="scripts/Schedulepage.js"></script>
+</html>
