@@ -9,7 +9,7 @@ should be well-organised and should not have any tabs in it. This web applicatio
 be mainly used to ease the process of delivering medical aids and supplies.
 
 ## List of feature
-# Main Page
+### Main Page
 1. A list of all the in-progress/scheduled flights is shown for the user to 
 view.
 2. Link the user to the view route page when the user selected a particular 
@@ -21,7 +21,7 @@ time/route/range.
 view routes page, flight history page, schedule new flights page and 
 also view the fleet's page.
 
-# Schedule Page
+### Schedule Page
 1. Present a map that can be interacted by the user.
 2. Allow the user to input the date and time (to minutes) for a flight (All the 
 time should be shown in the user’s timezone).
@@ -40,7 +40,7 @@ destination is confirmed (can choose minutely, hourly, daily).
 9. Use a line to represent the routes between the airports.
 10. Users should be able to schedule a flight whenever they want.
 
-# View Route Page
+### View Route Page
 1. Present a map for the user to interact.
 2. Users are available to view the information of the route such as the 
 type of plane, plate number of the plane, name of the departure and 
@@ -50,11 +50,11 @@ weather information.
 and the route will be shown by a line on the map.
 4. The route can be deleted here.
 
-# History Page
+### History Page
 1. Display the past routes in a list.
 2. The routes can be sorted based on user preference (time, origin, 
 destination, country, plane).
 3. The user should have the ability to delete the records.
 
-# View Fleet Page
+### View Fleet Page
 1. Show all the fleet information of the available planes sorted by country.
